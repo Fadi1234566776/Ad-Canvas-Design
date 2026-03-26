@@ -28,6 +28,21 @@ import img25 from "@assets/WhatsApp_Image_2022-12-12_at_1.44.13_PM_(1)_177454490
 import img26 from "@assets/WhatsApp_Image_2022-12-12_at_1.44.06_PM_1774544908821.jpeg";
 import img27 from "@assets/v_1774545004527.png";
 
+// New batch 3 — OrthoEase pillows (1:1)
+import img37 from "@assets/5_1774547589399.png";
+import img38 from "@assets/4_1774547589399.png";
+import img39 from "@assets/3_1774547589400.png";
+import img40 from "@assets/1_1774547589400.png";
+import img41 from "@assets/2_1774547589401.png";
+import img42 from "@assets/6_1774547589401.png";
+// New batch 3 — STRYX FORCE PRO (9:16)
+import img43 from "@assets/4_1774547594604.png";
+import img44 from "@assets/6_1774547594605.png";
+import img45 from "@assets/3_1774547594606.png";
+import img46 from "@assets/2_1774547594608.png";
+import img47 from "@assets/1_1774547594609.png";
+import img48 from "@assets/5_1774547594613.png";
+
 // New batch 2
 import img28 from "@assets/1b2f04199441167.66518c0f9166c_1774546159569.webp";
 import img29 from "@assets/6_1774546477416.png";
@@ -73,6 +88,13 @@ export const storyAds: Project[] = [
   // New: tall sport ads detected as 9:16
   { id: "s7", imageUrl: img21, format: "9:16" },
   { id: "s8", imageUrl: img23, format: "9:16" },
+  // New: STRYX FORCE PRO (9:16)
+  { id: "s9",  imageUrl: img43, format: "9:16" },
+  { id: "s10", imageUrl: img44, format: "9:16" },
+  { id: "s11", imageUrl: img45, format: "9:16" },
+  { id: "s12", imageUrl: img46, format: "9:16" },
+  { id: "s13", imageUrl: img47, format: "9:16" },
+  { id: "s14", imageUrl: img48, format: "9:16" },
 ];
 
 // 1:1 — square ads
@@ -95,6 +117,13 @@ export const squareAds: Project[] = [
   { id: "q15", imageUrl: img32, format: "1:1" }, // BMW X6 — square
   { id: "q16", imageUrl: img33, format: "1:1" }, // Dior Hypnotic Poison — square
   { id: "q17", imageUrl: img34, format: "1:1" }, // Vertex Gaming Ready to Play — square
+  // New: OrthoEase pillows (1:1)
+  { id: "q18", imageUrl: img37, format: "1:1" },
+  { id: "q19", imageUrl: img38, format: "1:1" },
+  { id: "q20", imageUrl: img39, format: "1:1" },
+  { id: "q21", imageUrl: img40, format: "1:1" },
+  { id: "q22", imageUrl: img41, format: "1:1" },
+  { id: "q23", imageUrl: img42, format: "1:1" },
 ];
 
 // Flat list for lightbox
