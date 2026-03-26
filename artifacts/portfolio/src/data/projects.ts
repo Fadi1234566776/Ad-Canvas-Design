@@ -1,3 +1,22 @@
+import img01 from "@assets/MAR23S_-_MSFB_011_Static_PreMenoMetabolism_V3_Chart_4x5_1774543193042.png";
+import img02 from "@assets/GFSS026_O30HS_V3_4-5_1774543249504.png";
+import img03 from "@assets/1_1774543451456.png";
+import img04 from "@assets/Concept2_Google_Static_1080x1350_v2_1774543469388.jpg";
+import img05 from "@assets/Concept1_Google_Static_1080x1350_v4_1774543487196.jpg";
+import img06 from "@assets/55555_1774543500978.png";
+import img07 from "@assets/4_1774543557194.jpg";
+import img08 from "@assets/5_1774543557195.jpg";
+import img09 from "@assets/Artboard_1_1774543630315.png";
+import img10 from "@assets/2-qHL80nOx7-transformed_1774543672986.png";
+import img11 from "@assets/78_1774543703486.png";
+import img12 from "@assets/1080x1920_1774543769614.jpg";
+import img13 from "@assets/1080x1920_1774543781049.jpg";
+import img14 from "@assets/story_1774543797661.png";
+import img15 from "@assets/O30HS_036_Static_LumpyLegs_V2_Illustration_4-5_1774543903363.png";
+import img16 from "@assets/2_1774543934817.png";
+import img17 from "@assets/GFSS017_03OHS_V1_DS_XX_9x16_1774543983284.png";
+import img18 from "@assets/2_1774543995248.png";
+
 export interface Project {
   id: string;
   title: string;
@@ -5,54 +24,15 @@ export interface Project {
   imageUrl: string;
 }
 
-const photoIds = [
-  "1515886657613-9f3515b0c78f",
-  "1615397323214-386d5e1bd125",
-  "1505740420928-5e560c06d30e",
-  "1523381210434-271e8be1f52b",
-  "1518611012118-696072aa579a",
-  "1497935586351-b67a49e012bf",
-  "1523170335258-f5ed11844a49",
-  "1594035910387-fea47794261f",
-  "1600210492486-724fe5c67fb0",
-  "1441986300917-64674bd600d8",
-  "1483985988355-763728e1935b",
-  "1469334031218-e382a71b716b",
-  "1529139350-9571be4c1a58",
-  "1504674900247-0877df9cc836",
-  "1512621776951-a57141f2eefd",
-  "1550583724-d2dcc35fca6e",
-  "1542291026-7eec264c27ff",
-  "1491553895911-0055eca6402d",
-  "1556821840-3a63f15732ce",
-  "1503342217-1f7f3b4c65bf",
-  "1586495777851-2e16ae0eafe7",
-  "1596462502278-27bfdc1f74be",
-  "1543163521-1bf539c55dd2",
-  "1571781926-135e65bf4ddd",
-  "1556228578-8c89e6adf883",
-  "1598300042831-2a24b07e4e38",
-  "1490481835-ece5-4cc7-8ff5-9b06c0dede0a",
-  "1558618666-fcd25c85cd64",
-  "1467003909585-2f8a72700288",
-  "1571019613454-1cb2f99b2d8b",
-  "1584735935-884de3162c2e",
-  "1572635148818-ef6fd45eb394",
-  "1603344204980-4edb4ea6a866",
-  "1555041469-db61dc5e6cb3",
-  "1524758631624-e2822132ec1e",
-  "1493663160-9ed0c10abd1a",
-  "1491553895911-0055eca6402d",
-  "1561861422-a549b1dac8d9",
-  "1488161628813-04466f872be2",
-  "1509631179647-0177331693ae",
-  "1520975954-1620012aaa38",
-  "1572635196237-14b3f281503f"
+const images = [
+  img01, img02, img03, img04, img05, img06,
+  img07, img08, img09, img10, img11, img12,
+  img13, img14, img15, img16, img17, img18,
 ];
 
-export const projects: Project[] = photoIds.map((id, index) => ({
+export const projects: Project[] = images.map((img, index) => ({
   id: `p${index + 1}`,
   title: `Project ${index + 1}`,
   category: "Creative",
-  imageUrl: `https://images.unsplash.com/photo-${id}?w=1080&h=1350&fit=crop&q=80`
+  imageUrl: img,
 }));
