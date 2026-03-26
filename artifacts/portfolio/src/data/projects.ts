@@ -5,68 +5,54 @@ export interface Project {
   imageUrl: string;
 }
 
-export const projects: Project[] = [
-  {
-    id: "p1",
-    title: "Summer Collection Launch",
-    category: "Fashion",
-    // Unsplash fashion model in natural lighting
-    imageUrl: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1080&h=1350&fit=crop&q=80"
-  },
-  {
-    id: "p2",
-    title: "Minimalist Skincare Ad",
-    category: "Beauty",
-    // Unsplash skincare/beauty minimalist shot
-    imageUrl: "https://images.unsplash.com/photo-1615397323214-386d5e1bd125?w=1080&h=1350&fit=crop&q=80"
-  },
-  {
-    id: "p3",
-    title: "Premium Audio Campaign",
-    category: "Tech",
-    // Unsplash premium headphones/tech
-    imageUrl: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=1080&h=1350&fit=crop&q=80"
-  },
-  {
-    id: "p4",
-    title: "Urban Streetwear Promo",
-    category: "Apparel",
-    // Unsplash streetwear fashion
-    imageUrl: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=1080&h=1350&fit=crop&q=80"
-  },
-  {
-    id: "p5",
-    title: "Fitness App User Acquisition",
-    category: "Lifestyle",
-    // Unsplash fitness lifestyle
-    imageUrl: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1080&h=1350&fit=crop&q=80"
-  },
-  {
-    id: "p6",
-    title: "Artisan Coffee Roasters",
-    category: "Food & Beverage",
-    // Unsplash premium coffee shot
-    imageUrl: "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=1080&h=1350&fit=crop&q=80"
-  },
-  {
-    id: "p7",
-    title: "Luxury Watch Retargeting",
-    category: "E-commerce",
-    // Unsplash luxury watch
-    imageUrl: "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=1080&h=1350&fit=crop&q=80"
-  },
-  {
-    id: "p8",
-    title: "Boutique Fragrance Ad",
-    category: "Beauty",
-    // Unsplash perfume bottle
-    imageUrl: "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=1080&h=1350&fit=crop&q=80"
-  },
-  {
-    id: "p9",
-    title: "Modern Furniture Collection",
-    category: "Home & Decor",
-    // Unsplash modern interior design
-    imageUrl: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1080&h=1350&fit=crop&q=80"
-  }
+const photoIds = [
+  "1515886657613-9f3515b0c78f",
+  "1615397323214-386d5e1bd125",
+  "1505740420928-5e560c06d30e",
+  "1523381210434-271e8be1f52b",
+  "1518611012118-696072aa579a",
+  "1497935586351-b67a49e012bf",
+  "1523170335258-f5ed11844a49",
+  "1594035910387-fea47794261f",
+  "1600210492486-724fe5c67fb0",
+  "1441986300917-64674bd600d8",
+  "1483985988355-763728e1935b",
+  "1469334031218-e382a71b716b",
+  "1529139350-9571be4c1a58",
+  "1504674900247-0877df9cc836",
+  "1512621776951-a57141f2eefd",
+  "1550583724-d2dcc35fca6e",
+  "1542291026-7eec264c27ff",
+  "1491553895911-0055eca6402d",
+  "1556821840-3a63f15732ce",
+  "1503342217-1f7f3b4c65bf",
+  "1586495777851-2e16ae0eafe7",
+  "1596462502278-27bfdc1f74be",
+  "1543163521-1bf539c55dd2",
+  "1571781926-135e65bf4ddd",
+  "1556228578-8c89e6adf883",
+  "1598300042831-2a24b07e4e38",
+  "1490481835-ece5-4cc7-8ff5-9b06c0dede0a",
+  "1558618666-fcd25c85cd64",
+  "1467003909585-2f8a72700288",
+  "1571019613454-1cb2f99b2d8b",
+  "1584735935-884de3162c2e",
+  "1572635148818-ef6fd45eb394",
+  "1603344204980-4edb4ea6a866",
+  "1555041469-db61dc5e6cb3",
+  "1524758631624-e2822132ec1e",
+  "1493663160-9ed0c10abd1a",
+  "1491553895911-0055eca6402d",
+  "1561861422-a549b1dac8d9",
+  "1488161628813-04466f872be2",
+  "1509631179647-0177331693ae",
+  "1520975954-1620012aaa38",
+  "1572635196237-14b3f281503f"
 ];
+
+export const projects: Project[] = photoIds.map((id, index) => ({
+  id: `p${index + 1}`,
+  title: `Project ${index + 1}`,
+  category: "Creative",
+  imageUrl: `https://images.unsplash.com/photo-${id}?w=1080&h=1350&fit=crop&q=80`
+}));

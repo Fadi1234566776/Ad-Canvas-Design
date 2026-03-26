@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Manrope:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 @plugin "@tailwindcss/typography";
@@ -36,7 +36,6 @@
   --color-destructive-foreground: hsl(var(--destructive-foreground));
 
   --font-sans: var(--font-body);
-  --font-serif: var(--font-display);
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -45,41 +44,71 @@
 }
 
 :root {
-  /* Dark modern premium palette */
-  --background: 240 5% 4%;
-  --foreground: 0 0% 98%;
+  --background: 225 20% 5%;
+  --foreground: 0 0% 97%;
   
-  --card: 240 5% 7%;
-  --card-foreground: 0 0% 98%;
-  --card-border: 240 5% 12%;
+  --card: 225 18% 9%;
+  --card-foreground: 0 0% 97%;
+  --card-border: 225 20% 14%;
   
-  --popover: 240 5% 6%;
-  --popover-foreground: 0 0% 98%;
-  --popover-border: 240 5% 12%;
+  --popover: 225 18% 9%;
+  --popover-foreground: 0 0% 97%;
+  --popover-border: 225 20% 14%;
   
-  --primary: 43 85% 55%; /* Warm gold */
-  --primary-foreground: 240 5% 4%;
+  --primary: 264 80% 68%;
+  --primary-foreground: 0 0% 100%;
   
-  --secondary: 240 5% 12%;
-  --secondary-foreground: 0 0% 98%;
+  --secondary: 225 18% 13%;
+  --secondary-foreground: 0 0% 80%;
   
-  --muted: 240 5% 15%;
-  --muted-foreground: 240 5% 65%;
+  --muted: 225 18% 13%;
+  --muted-foreground: 225 10% 55%;
   
-  --accent: 43 70% 45%;
-  --accent-foreground: 0 0% 98%;
+  --accent: 264 80% 68%;
+  --accent-foreground: 0 0% 100%;
   
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
 
-  --border: 240 5% 12%;
-  --input: 240 5% 12%;
-  --ring: 43 85% 55%;
+  --border: 225 20% 14%;
+  --input: 225 20% 14%;
+  --ring: 264 80% 68%;
 
-  --font-display: 'Playfair Display', serif;
-  --font-body: 'Manrope', sans-serif;
+  --font-body: 'Sora', sans-serif;
   
   --radius: 0.75rem;
+}
+
+.dark {
+  --background: 225 20% 5%;
+  --foreground: 0 0% 97%;
+  
+  --card: 225 18% 9%;
+  --card-foreground: 0 0% 97%;
+  --card-border: 225 20% 14%;
+  
+  --popover: 225 18% 9%;
+  --popover-foreground: 0 0% 97%;
+  --popover-border: 225 20% 14%;
+  
+  --primary: 264 80% 68%;
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: 225 18% 13%;
+  --secondary-foreground: 0 0% 80%;
+  
+  --muted: 225 18% 13%;
+  --muted-foreground: 225 10% 55%;
+  
+  --accent: 264 80% 68%;
+  --accent-foreground: 0 0% 100%;
+  
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 225 20% 14%;
+  --input: 225 20% 14%;
+  --ring: 264 80% 68%;
 }
 
 @layer base {
@@ -92,8 +121,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-display);
-    @apply tracking-tight;
+    @apply tracking-tight font-sans;
   }
 }
 
