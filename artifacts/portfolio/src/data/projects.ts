@@ -17,22 +17,43 @@ import img16 from "@assets/2_1774543934817.png";
 import img17 from "@assets/GFSS017_03OHS_V1_DS_XX_9x16_1774543983284.png";
 import img18 from "@assets/2_1774543995248.png";
 
+export type AdFormat = "4:5" | "9:16" | "1:1";
+
 export interface Project {
   id: string;
-  title: string;
-  category: string;
   imageUrl: string;
+  format: AdFormat;
 }
 
-const images = [
-  img01, img02, img03, img04, img05, img06,
-  img07, img08, img09, img10, img11, img12,
-  img13, img14, img15, img16, img17, img18,
+// 4:5 — identified by filename keywords: 4x5, 4-5, 1080x1350
+export const feedAds: Project[] = [
+  { id: "f1", imageUrl: img01, format: "4:5" },
+  { id: "f2", imageUrl: img02, format: "4:5" },
+  { id: "f3", imageUrl: img03, format: "4:5" },
+  { id: "f4", imageUrl: img04, format: "4:5" },
+  { id: "f5", imageUrl: img05, format: "4:5" },
+  { id: "f6", imageUrl: img06, format: "4:5" },
+  { id: "f7", imageUrl: img07, format: "4:5" },
+  { id: "f8", imageUrl: img08, format: "4:5" },
+  { id: "f9", imageUrl: img15, format: "4:5" },
 ];
 
-export const projects: Project[] = images.map((img, index) => ({
-  id: `p${index + 1}`,
-  title: `Project ${index + 1}`,
-  category: "Creative",
-  imageUrl: img,
-}));
+// 9:16 — identified by filename keywords: 9x16, 1080x1920, story, and Wellsite tall creatives
+export const storyAds: Project[] = [
+  { id: "s1", imageUrl: img09, format: "9:16" },
+  { id: "s2", imageUrl: img11, format: "9:16" },
+  { id: "s3", imageUrl: img12, format: "9:16" },
+  { id: "s4", imageUrl: img13, format: "9:16" },
+  { id: "s5", imageUrl: img14, format: "9:16" },
+  { id: "s6", imageUrl: img17, format: "9:16" },
+];
+
+// 1:1 — remaining images with square-ish compositions
+export const squareAds: Project[] = [
+  { id: "q1", imageUrl: img10, format: "1:1" },
+  { id: "q2", imageUrl: img16, format: "1:1" },
+  { id: "q3", imageUrl: img18, format: "1:1" },
+];
+
+// Flat list for lightbox navigation
+export const allProjects: Project[] = [...feedAds, ...storyAds, ...squareAds];
