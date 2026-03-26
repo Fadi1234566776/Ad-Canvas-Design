@@ -1,0 +1,11 @@
+packages:
+  "framer-motion": "For smooth lightbox animations, page transitions, and hover effects"
+
+images:
+  - path: "artifacts/portfolio/public/images/hero-bg.png"
+    description: "Cinematic, moody dark texture with subtle, soft warm gold lighting leaks and film grain. Deep blacks and charcoal grey gradients. Premium editorial aesthetic."
+    aspect_ratio: "16:9"
+
+notes:
+  - This is a static portfolio site, no backend needed.
+  - All data is mocked in the frontend components.
