@@ -17,6 +17,17 @@ import img16 from "@assets/2_1774543934817.png";
 import img17 from "@assets/GFSS017_03OHS_V1_DS_XX_9x16_1774543983284.png";
 import img18 from "@assets/2_1774543995248.png";
 
+// New batch
+import img19 from "@assets/post1_1774544714504.png";
+import img20 from "@assets/logitech_2_1774544754767.png";
+import img21 from "@assets/sport_1774544758846.png";
+import img22 from "@assets/Logitech_G__1774544765543.png";
+import img23 from "@assets/sport5_1774544773227.png";
+import img24 from "@assets/sport_3_1774544793888.png";
+import img25 from "@assets/WhatsApp_Image_2022-12-12_at_1.44.13_PM_(1)_1774544900302.jpeg";
+import img26 from "@assets/WhatsApp_Image_2022-12-12_at_1.44.06_PM_1774544908821.jpeg";
+import img27 from "@assets/v_1774545004527.png";
+
 export type AdFormat = "4:5" | "9:16" | "1:1";
 
 export interface Project {
@@ -25,7 +36,7 @@ export interface Project {
   format: AdFormat;
 }
 
-// 4:5 — identified by filename keywords: 4x5, 4-5, 1080x1350
+// 4:5 — portrait feed ads (1080×1350 style)
 export const feedAds: Project[] = [
   { id: "f1", imageUrl: img01, format: "4:5" },
   { id: "f2", imageUrl: img02, format: "4:5" },
@@ -38,7 +49,7 @@ export const feedAds: Project[] = [
   { id: "f9", imageUrl: img15, format: "4:5" },
 ];
 
-// 9:16 — identified by filename keywords: 9x16, 1080x1920, story, and Wellsite tall creatives
+// 9:16 — story / tall portrait (1080×1920 style)
 export const storyAds: Project[] = [
   { id: "s1", imageUrl: img09, format: "9:16" },
   { id: "s2", imageUrl: img11, format: "9:16" },
@@ -46,14 +57,25 @@ export const storyAds: Project[] = [
   { id: "s4", imageUrl: img13, format: "9:16" },
   { id: "s5", imageUrl: img14, format: "9:16" },
   { id: "s6", imageUrl: img17, format: "9:16" },
+  // New: tall sport ads detected as 9:16
+  { id: "s7", imageUrl: img21, format: "9:16" },
+  { id: "s8", imageUrl: img23, format: "9:16" },
 ];
 
-// 1:1 — remaining images with square-ish compositions
+// 1:1 — square ads
 export const squareAds: Project[] = [
   { id: "q1", imageUrl: img10, format: "1:1" },
   { id: "q2", imageUrl: img16, format: "1:1" },
   { id: "q3", imageUrl: img18, format: "1:1" },
+  // New: square ads
+  { id: "q4", imageUrl: img19, format: "1:1" }, // Korean BBQ — square
+  { id: "q5", imageUrl: img20, format: "1:1" }, // Logitech Level Up — square
+  { id: "q6", imageUrl: img22, format: "1:1" }, // Logitech Sound — square
+  { id: "q7", imageUrl: img24, format: "1:1" }, // True Sport landscape → closest 1:1
+  { id: "q8", imageUrl: img25, format: "1:1" }, // Spirit of Kings — square
+  { id: "q9", imageUrl: img26, format: "1:1" }, // Fratelli Diamanti — square
+  { id: "q10", imageUrl: img27, format: "1:1" }, // V Super Soda — square
 ];
 
-// Flat list for lightbox navigation
+// Flat list for lightbox
 export const allProjects: Project[] = [...feedAds, ...storyAds, ...squareAds];
