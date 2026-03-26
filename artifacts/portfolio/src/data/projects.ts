@@ -28,6 +28,14 @@ import img25 from "@assets/WhatsApp_Image_2022-12-12_at_1.44.13_PM_(1)_177454490
 import img26 from "@assets/WhatsApp_Image_2022-12-12_at_1.44.06_PM_1774544908821.jpeg";
 import img27 from "@assets/v_1774545004527.png";
 
+// New batch 4 — Smartwatch band (9:16 + 1:1)
+import img49 from "@assets/6_1774548311275.png";
+import img50 from "@assets/2_1774548311278.png";
+import img51 from "@assets/5_1774548311279.png";
+import img52 from "@assets/3_1774548311279.png";
+import img53 from "@assets/1_1774548311279.png";
+import img54 from "@assets/4_1774548311279.png";
+
 // New batch 3 — OrthoEase pillows (1:1)
 import img37 from "@assets/5_1774547589399.png";
 import img38 from "@assets/4_1774547589399.png";
@@ -95,6 +103,11 @@ export const storyAds: Project[] = [
   { id: "s12", imageUrl: img46, format: "9:16" },
   { id: "s13", imageUrl: img47, format: "9:16" },
   { id: "s14", imageUrl: img48, format: "9:16" },
+  // New: smartwatch band tall ads (9:16)
+  { id: "s15", imageUrl: img49, format: "9:16" },
+  { id: "s16", imageUrl: img50, format: "9:16" },
+  { id: "s17", imageUrl: img51, format: "9:16" },
+  { id: "s18", imageUrl: img52, format: "9:16" },
 ];
 
 // 1:1 — square ads
@@ -124,6 +137,9 @@ export const squareAds: Project[] = [
   { id: "q21", imageUrl: img40, format: "1:1" },
   { id: "q22", imageUrl: img41, format: "1:1" },
   { id: "q23", imageUrl: img42, format: "1:1" },
+  // New: smartwatch band square ads (1:1)
+  { id: "q24", imageUrl: img53, format: "1:1" },
+  { id: "q25", imageUrl: img54, format: "1:1" },
 ];
 
 // Flat list for lightbox
