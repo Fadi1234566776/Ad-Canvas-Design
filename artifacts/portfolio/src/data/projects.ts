@@ -28,6 +28,17 @@ import img25 from "@assets/WhatsApp_Image_2022-12-12_at_1.44.13_PM_(1)_177454490
 import img26 from "@assets/WhatsApp_Image_2022-12-12_at_1.44.06_PM_1774544908821.jpeg";
 import img27 from "@assets/v_1774545004527.png";
 
+// New batch 2
+import img28 from "@assets/1b2f04199441167.66518c0f9166c_1774546159569.webp";
+import img29 from "@assets/6_1774546477416.png";
+import img30 from "@assets/3_1774546477417.png";
+import img31 from "@assets/1_1774546477417.png";
+import img32 from "@assets/5_1774546477418.png";
+import img33 from "@assets/2_1774546477418.png";
+import img34 from "@assets/4_1774546477418.png";
+import img35 from "@assets/Artboard_1_1774546665807.png";
+import img36 from "@assets/Artboard_2_copy_1774546672371.png";
+
 export type AdFormat = "4:5" | "9:16" | "1:1";
 
 export interface Project {
@@ -47,6 +58,8 @@ export const feedAds: Project[] = [
   { id: "f7", imageUrl: img07, format: "4:5" },
   { id: "f8", imageUrl: img08, format: "4:5" },
   { id: "f9", imageUrl: img15, format: "4:5" },
+  { id: "f10", imageUrl: img35, format: "4:5" }, // Burgan Bank "Crafted for The Confident"
+  { id: "f11", imageUrl: img36, format: "4:5" }, // Burgan Bank "Shop smart 50% back"
 ];
 
 // 9:16 — story / tall portrait (1080×1920 style)
@@ -75,6 +88,13 @@ export const squareAds: Project[] = [
   { id: "q8", imageUrl: img25, format: "1:1" }, // Spirit of Kings — square
   { id: "q9", imageUrl: img26, format: "1:1" }, // Fratelli Diamanti — square
   { id: "q10", imageUrl: img27, format: "1:1" }, // V Super Soda — square
+  { id: "q11", imageUrl: img28, format: "1:1" }, // Bestway CoolerZ — square
+  { id: "q12", imageUrl: img29, format: "1:1" }, // Triple Chocolate Mousse Cake — square
+  { id: "q13", imageUrl: img30, format: "1:1" }, // Huff & Puff burger — square
+  { id: "q14", imageUrl: img31, format: "1:1" }, // Amazon Natural Honey — square
+  { id: "q15", imageUrl: img32, format: "1:1" }, // BMW X6 — square
+  { id: "q16", imageUrl: img33, format: "1:1" }, // Dior Hypnotic Poison — square
+  { id: "q17", imageUrl: img34, format: "1:1" }, // Vertex Gaming Ready to Play — square
 ];
 
 // Flat list for lightbox
