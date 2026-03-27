@@ -97,7 +97,7 @@ export const storyAds: Project[] = [
   { id: "s7", imageUrl: img21, format: "9:16" },
   { id: "s8", imageUrl: img23, format: "9:16" },
   // New: STRYX FORCE PRO (9:16)
-  { id: "s9",  imageUrl: img43, format: "9:16" },
+  { id: "s9", imageUrl: img43, format: "9:16" },
   { id: "s10", imageUrl: img44, format: "9:16" },
   { id: "s11", imageUrl: img45, format: "9:16" },
   { id: "s12", imageUrl: img46, format: "9:16" },
