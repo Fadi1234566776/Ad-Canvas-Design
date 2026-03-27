@@ -7,10 +7,15 @@ import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 const basePath = process.env.BASE_PATH || "/";
 const port = Number(process.env.PORT || 3000);
 
-export default defineConfig(async () => ({
+export default defineConfig({
   base: basePath,
   plugins: [react(), tailwindcss(), runtimeErrorOverlay()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
   server: {
     port,
   },
-}));
+});
