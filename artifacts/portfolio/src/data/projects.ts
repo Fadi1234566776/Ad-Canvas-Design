@@ -64,6 +64,7 @@ import img36 from "@assets/Artboard_2_copy_1774546672371.png";
 import metaFeed12 from "@assets/meta-feed-12.jpg";
 import metaFeed13 from "@assets/meta-feed-13.jpg";
 import metaFeed14 from "@assets/meta-feed-14.png";
+import metaFeed15 from "@assets/meta-feed-15.jpg";
 
 export type AdFormat = "4:5" | "9:16" | "1:1";
 
@@ -89,6 +90,7 @@ export const feedAds: Project[] = [
   { id: "f12", imageUrl: metaFeed12, format: "4:5" },
 { id: "f13", imageUrl: metaFeed13, format: "4:5" },
 { id: "f14", imageUrl: metaFeed14, format: "4:5" },
+  { id: "f15", imageUrl: metaFeed15, format: "4:5" },
 ];
 
 // 9:16 — story / tall portrait (1080×1920 style)
