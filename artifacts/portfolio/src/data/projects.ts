@@ -64,7 +64,7 @@ import img36 from "@assets/Artboard_2_copy_1774546672371.png";
 import metaFeed12 from "@assets/meta-feed-12.jpg";
 import metaFeed13 from "@assets/meta-feed-13.jpg";
 import metaFeed14 from "@assets/meta-feed-14.png";
-import metaFeed15 from "@assets/meta-feed-15.jpg";
+import metaFeed15 from "@assets/meta-feed-15.png";
 
 export type AdFormat = "4:5" | "9:16" | "1:1";
 
