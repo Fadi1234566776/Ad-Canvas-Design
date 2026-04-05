@@ -119,9 +119,9 @@ export const storyAds: Project[] = [
   { id: "s16", imageUrl: img50, format: "9:16" },
   { id: "s17", imageUrl: img51, format: "9:16" },
   { id: "s18", imageUrl: img52, format: "9:16" },
-  { id: "s01", imageUrl: storyAd01, format: "9:16" },
-{ id: "s02", imageUrl: storyAd02, format: "9:16" },
-{ id: "s03", imageUrl: storyAd03, format: "9:16" },
+ { id: "s19", imageUrl: storyAd01, format: "9:16" },
+{ id: "s20", imageUrl: storyAd02, format: "9:16" },
+{ id: "s21", imageUrl: storyAd03, format: "9:16" },
 ];
 
 // 1:1 — square ads
