@@ -65,6 +65,9 @@ import metaFeed12 from "@assets/meta-feed-12.jpg";
 import metaFeed13 from "@assets/meta-feed-13.jpg";
 import metaFeed14 from "@assets/meta-feed-14.png";
 import metaFeed15 from "@assets/meta-feed-15.png";
+import storyAd01 from "@assets/story-ad-01.png";
+import storyAd02 from "@assets/story-ad-02.png";
+import storyAd03 from "@assets/story-ad-03.png";
 
 export type AdFormat = "4:5" | "9:16" | "1:1";
 
@@ -116,6 +119,9 @@ export const storyAds: Project[] = [
   { id: "s16", imageUrl: img50, format: "9:16" },
   { id: "s17", imageUrl: img51, format: "9:16" },
   { id: "s18", imageUrl: img52, format: "9:16" },
+  { id: "s01", imageUrl: storyAd01, format: "9:16" },
+{ id: "s02", imageUrl: storyAd02, format: "9:16" },
+{ id: "s03", imageUrl: storyAd03, format: "9:16" },
 ];
 
 // 1:1 — square ads
