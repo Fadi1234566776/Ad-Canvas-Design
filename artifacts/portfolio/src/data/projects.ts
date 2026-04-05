@@ -61,6 +61,9 @@ import img33 from "@assets/2_1774546477418.png";
 import img34 from "@assets/4_1774546477418.png";
 import img35 from "@assets/Artboard_1_1774546665807.png";
 import img36 from "@assets/Artboard_2_copy_1774546672371.png";
+import metaFeed12 from "@assets/meta-feed-12.jpg";
+import metaFeed13 from "@assets/meta-feed-13.jpg";
+import metaFeed14 from "@assets/meta-feed-14.png";
 
 export type AdFormat = "4:5" | "9:16" | "1:1";
 
@@ -83,6 +86,9 @@ export const feedAds: Project[] = [
   { id: "f9", imageUrl: img15, format: "4:5" },
   { id: "f10", imageUrl: img35, format: "4:5" }, // Burgan Bank "Crafted for The Confident"
   { id: "f11", imageUrl: img36, format: "4:5" }, // Burgan Bank "Shop smart 50% back"
+  { id: "f12", imageUrl: metaFeed12, format: "4:5" },
+{ id: "f13", imageUrl: metaFeed13, format: "4:5" },
+{ id: "f14", imageUrl: metaFeed14, format: "4:5" },
 ];
 
 // 9:16 — story / tall portrait (1080×1920 style)
