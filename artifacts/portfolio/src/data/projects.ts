@@ -65,9 +65,9 @@ import metaFeed12 from "@assets/meta-feed-12.jpg";
 import metaFeed13 from "@assets/meta-feed-13.jpg";
 import metaFeed14 from "@assets/meta-feed-14.png";
 import metaFeed15 from "@assets/meta-feed-15.png";
-import storyAd01 from "@assets/story-ad-01.png";
-import storyAd02 from "@assets/story-ad-02.png";
-import storyAd03 from "@assets/story-ad-03.png";
+import storyAd01 from "@assets/story-batch-01.png";
+import storyAd02 from "@assets/story-batch-02.png";
+import storyAd03 from "@assets/story-batch-03.png";
 
 export type AdFormat = "4:5" | "9:16" | "1:1";
 
