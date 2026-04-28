@@ -164,7 +164,7 @@ export const squareAds: Project[] = [
   // New: smartwatch band square ads (1:1)
   { id: "q24", imageUrl: img53, format: "1:1" },
   { id: "q25", imageUrl: img54, format: "1:1" },
-  
+  ];
 
 
 // Flat list for lightbox
