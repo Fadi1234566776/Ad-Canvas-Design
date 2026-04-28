@@ -118,6 +118,11 @@ export const feedAds: Project[] = [
 
 // 9:16 — story / tall portrait (1080×1920 style)
 export const storyAds: Project[] = [
+    { id: "s22", imageUrl: storyAd04, format: "9:16" },
+{ id: "s23", imageUrl: storyAd05, format: "9:16" },
+{ id: "s24", imageUrl: storyAd06, format: "9:16" },
+{ id: "s25", imageUrl: storyAd07, format: "9:16" },
+{ id: "s26", imageUrl: storyAd08, format: "9:16" },
   { id: "s1", imageUrl: img09, format: "9:16" },
   { id: "s2", imageUrl: img11, format: "9:16" },
   { id: "s3", imageUrl: img12, format: "9:16" },
@@ -142,11 +147,6 @@ export const storyAds: Project[] = [
  { id: "s19", imageUrl: storyAd01, format: "9:16" },
 { id: "s20", imageUrl: storyAd02, format: "9:16" },
 { id: "s21", imageUrl: storyAd03, format: "9:16" },
-  { id: "s22", imageUrl: storyAd04, format: "9:16" },
-{ id: "s23", imageUrl: storyAd05, format: "9:16" },
-{ id: "s24", imageUrl: storyAd06, format: "9:16" },
-{ id: "s25", imageUrl: storyAd07, format: "9:16" },
-{ id: "s26", imageUrl: storyAd08, format: "9:16" },
 ];
 
 // 1:1 — square ads
