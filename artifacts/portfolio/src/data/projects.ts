@@ -151,6 +151,10 @@ export const storyAds: Project[] = [
 
 // 1:1 — square ads
 export const squareAds: Project[] = [
+    { id: "q26", imageUrl: squareAd01, format: "1:1" },
+{ id: "q27", imageUrl: squareAd02, format: "1:1" },
+{ id: "q28", imageUrl: squareAd03, format: "1:1" },
+{ id: "q29", imageUrl: squareAd04, format: "1:1" },
   { id: "q1", imageUrl: img10, format: "1:1" },
   { id: "q2", imageUrl: img16, format: "1:1" },
   { id: "q3", imageUrl: img18, format: "1:1" },
@@ -179,10 +183,6 @@ export const squareAds: Project[] = [
   // New: smartwatch band square ads (1:1)
   { id: "q24", imageUrl: img53, format: "1:1" },
   { id: "q25", imageUrl: img54, format: "1:1" },
-  { id: "q26", imageUrl: squareAd01, format: "1:1" },
-{ id: "q27", imageUrl: squareAd02, format: "1:1" },
-{ id: "q28", imageUrl: squareAd03, format: "1:1" },
-{ id: "q29", imageUrl: squareAd04, format: "1:1" },
 { id: "q30", imageUrl: squareAd05, format: "1:1" },
   ];
 
