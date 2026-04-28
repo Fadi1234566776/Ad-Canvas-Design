@@ -114,7 +114,9 @@ export const feedAds: Project[] = [
 { id: "f18", imageUrl: metaFeed18, format: "4:5" },
 { id: "f19", imageUrl: metaFeed19, format: "4:5" },
 { id: "f20", imageUrl: metaFeed20, format: "4:5" },
-];
+  { id: "q2", imageUrl: img16, format: "1:1" },
+  { id: "q3", imageUrl: img18, format: "1:1" },
+]; 
 
 // 9:16 — story / tall portrait (1080×1920 style)
 export const storyAds: Project[] = [
@@ -156,8 +158,6 @@ export const squareAds: Project[] = [
 { id: "q28", imageUrl: squareAd03, format: "1:1" },
 { id: "q29", imageUrl: squareAd04, format: "1:1" },
   { id: "q1", imageUrl: img10, format: "1:1" },
-  { id: "q2", imageUrl: img16, format: "1:1" },
-  { id: "q3", imageUrl: img18, format: "1:1" },
   // New: square ads
   { id: "q4", imageUrl: img19, format: "1:1" }, // Korean BBQ — square
   { id: "q5", imageUrl: img20, format: "1:1" }, // Logitech Level Up — square
