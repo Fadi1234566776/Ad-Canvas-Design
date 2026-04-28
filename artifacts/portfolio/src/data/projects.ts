@@ -162,7 +162,6 @@ export const squareAds: Project[] = [
   { id: "q4", imageUrl: img19, format: "1:1" }, // Korean BBQ — square
   { id: "q5", imageUrl: img20, format: "1:1" }, // Logitech Level Up — square
   { id: "q6", imageUrl: img22, format: "1:1" }, // Logitech Sound — square
-  { id: "q7", imageUrl: img24, format: "1:1" }, // True Sport landscape → closest 1:1
   { id: "q8", imageUrl: img25, format: "1:1" }, // Spirit of Kings — square
   { id: "q9", imageUrl: img26, format: "1:1" }, // Fratelli Diamanti — square
   { id: "q10", imageUrl: img27, format: "1:1" }, // V Super Soda — square
@@ -182,7 +181,6 @@ export const squareAds: Project[] = [
   { id: "q23", imageUrl: img42, format: "1:1" },
   // New: smartwatch band square ads (1:1)
   { id: "q24", imageUrl: img53, format: "1:1" },
-  { id: "q25", imageUrl: img54, format: "1:1" },
 { id: "q30", imageUrl: squareAd05, format: "1:1" },
   ];
 
