@@ -73,6 +73,11 @@ import metaFeed17 from "@assets/meta-feed-17.png";
 import metaFeed18 from "@assets/meta-feed-18.png";
 import metaFeed19 from "@assets/meta-feed-19.png";
 import metaFeed20 from "@assets/meta-feed-20.png";
+import storyAd04 from "@assets/story-batch-04.png";
+import storyAd05 from "@assets/story-batch-05.png";
+import storyAd06 from "@assets/story-batch-06.png";
+import storyAd07 from "@assets/story-batch-07.png";
+import storyAd08 from "@assets/story-batch-08.png";
 
 export type AdFormat = "4:5" | "9:16" | "1:1";
 
@@ -132,6 +137,11 @@ export const storyAds: Project[] = [
  { id: "s19", imageUrl: storyAd01, format: "9:16" },
 { id: "s20", imageUrl: storyAd02, format: "9:16" },
 { id: "s21", imageUrl: storyAd03, format: "9:16" },
+  { id: "s22", imageUrl: storyAd04, format: "9:16" },
+{ id: "s23", imageUrl: storyAd05, format: "9:16" },
+{ id: "s24", imageUrl: storyAd06, format: "9:16" },
+{ id: "s25", imageUrl: storyAd07, format: "9:16" },
+{ id: "s26", imageUrl: storyAd08, format: "9:16" },
 ];
 
 // 1:1 — square ads
