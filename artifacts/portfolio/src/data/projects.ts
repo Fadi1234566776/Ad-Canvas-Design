@@ -78,6 +78,11 @@ import storyAd05 from "@assets/story-batch-05.png";
 import storyAd06 from "@assets/story-batch-06.png";
 import storyAd07 from "@assets/story-batch-07.png";
 import storyAd08 from "@assets/story-batch-08.png";
+import squareAd01 from "@assets/square-batch-01.png";
+import squareAd02 from "@assets/square-batch-02.png";
+import squareAd03 from "@assets/square-batch-03.png";
+import squareAd04 from "@assets/square-batch-04.png";
+import squareAd05 from "@assets/square-batch-05.png";
 
 export type AdFormat = "4:5" | "9:16" | "1:1";
 
@@ -174,6 +179,11 @@ export const squareAds: Project[] = [
   // New: smartwatch band square ads (1:1)
   { id: "q24", imageUrl: img53, format: "1:1" },
   { id: "q25", imageUrl: img54, format: "1:1" },
+  { id: "q26", imageUrl: squareAd01, format: "1:1" },
+{ id: "q27", imageUrl: squareAd02, format: "1:1" },
+{ id: "q28", imageUrl: squareAd03, format: "1:1" },
+{ id: "q29", imageUrl: squareAd04, format: "1:1" },
+{ id: "q30", imageUrl: squareAd05, format: "1:1" },
   ];
 
 
