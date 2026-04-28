@@ -68,6 +68,11 @@ import metaFeed15 from "@assets/meta-feed-15.png";
 import storyAd01 from "@assets/story-batch-01.png";
 import storyAd02 from "@assets/story-batch-02.png";
 import storyAd03 from "@assets/story-batch-03.png";
+import metaFeed16 from "@assets/meta-feed-16.png";
+import metaFeed17 from "@assets/meta-feed-17.png";
+import metaFeed18 from "@assets/meta-feed-18.png";
+import metaFeed19 from "@assets/meta-feed-19.png";
+import metaFeed20 from "@assets/meta-feed-20.png";
 
 export type AdFormat = "4:5" | "9:16" | "1:1";
 
@@ -94,6 +99,11 @@ export const feedAds: Project[] = [
 { id: "f13", imageUrl: metaFeed13, format: "4:5" },
 { id: "f14", imageUrl: metaFeed14, format: "4:5" },
   { id: "f15", imageUrl: metaFeed15, format: "4:5" },
+  { id: "f16", imageUrl: metaFeed16, format: "4:5" },
+{ id: "f17", imageUrl: metaFeed17, format: "4:5" },
+{ id: "f18", imageUrl: metaFeed18, format: "4:5" },
+{ id: "f19", imageUrl: metaFeed19, format: "4:5" },
+{ id: "f20", imageUrl: metaFeed20, format: "4:5" },
 ];
 
 // 9:16 — story / tall portrait (1080×1920 style)
@@ -154,7 +164,8 @@ export const squareAds: Project[] = [
   // New: smartwatch band square ads (1:1)
   { id: "q24", imageUrl: img53, format: "1:1" },
   { id: "q25", imageUrl: img54, format: "1:1" },
-];
+  
+
 
 // Flat list for lightbox
 export const allProjects: Project[] = [...feedAds, ...storyAds, ...squareAds];
