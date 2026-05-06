@@ -83,6 +83,8 @@ import squareAd02 from "@assets/square-batch-02.png";
 import squareAd03 from "@assets/square-batch-03.png";
 import squareAd04 from "@assets/square-batch-04.png";
 import squareAd05 from "@assets/square-batch-05.png";
+import metaFeed21 from "@assets/meta-feed-21.png";
+import metaFeed22 from "@assets/meta-feed-22.png";
 
 export type AdFormat = "4:5" | "9:16" | "1:1";
 
@@ -94,6 +96,8 @@ export interface Project {
 
 // 4:5 — portrait feed ads (1080×1350 style)
 export const feedAds: Project[] = [
+  { id: "f21", imageUrl: metaFeed21, format: "4:5" },
+{ id: "f22", imageUrl: metaFeed22, format: "4:5" },
   { id: "f1", imageUrl: img01, format: "4:5" },
   { id: "f2", imageUrl: img02, format: "4:5" },
   { id: "f3", imageUrl: img03, format: "4:5" },
