@@ -108,6 +108,18 @@ export interface Project {
 
 // 4:5 — portrait feed ads (1080×1350 style)
 export const feedAds: Project[] = [
+   { id: "f23", imageUrl: metaFeed23, format: "4:5" },
+{ id: "f24", imageUrl: metaFeed24, format: "4:5" },
+{ id: "f25", imageUrl: metaFeed25, format: "4:5" },
+{ id: "f26", imageUrl: metaFeed26, format: "4:5" },
+{ id: "f27", imageUrl: metaFeed27, format: "4:5" },
+{ id: "f28", imageUrl: metaFeed28, format: "4:5" },
+{ id: "f29", imageUrl: metaFeed29, format: "4:5" },
+{ id: "f30", imageUrl: metaFeed30, format: "4:5" },
+{ id: "f31", imageUrl: metaFeed31, format: "4:5" },
+{ id: "f32", imageUrl: metaFeed32, format: "4:5" },
+{ id: "f33", imageUrl: metaFeed33, format: "4:5" },
+{ id: "f34", imageUrl: metaFeed34, format: "4:5" },
   { id: "f21", imageUrl: metaFeed21, format: "4:5" },
 { id: "f22", imageUrl: metaFeed22, format: "4:5" },
   { id: "f1", imageUrl: img01, format: "4:5" },
@@ -132,18 +144,6 @@ export const feedAds: Project[] = [
 { id: "f20", imageUrl: metaFeed20, format: "4:5" },
   { id: "q2", imageUrl: img16, format: "1:1" },
   { id: "q3", imageUrl: img18, format: "1:1" },
-  { id: "f23", imageUrl: metaFeed23, format: "4:5" },
-{ id: "f24", imageUrl: metaFeed24, format: "4:5" },
-{ id: "f25", imageUrl: metaFeed25, format: "4:5" },
-{ id: "f26", imageUrl: metaFeed26, format: "4:5" },
-{ id: "f27", imageUrl: metaFeed27, format: "4:5" },
-{ id: "f28", imageUrl: metaFeed28, format: "4:5" },
-{ id: "f29", imageUrl: metaFeed29, format: "4:5" },
-{ id: "f30", imageUrl: metaFeed30, format: "4:5" },
-{ id: "f31", imageUrl: metaFeed31, format: "4:5" },
-{ id: "f32", imageUrl: metaFeed32, format: "4:5" },
-{ id: "f33", imageUrl: metaFeed33, format: "4:5" },
-{ id: "f34", imageUrl: metaFeed34, format: "4:5" },
 ]; 
 
 // 9:16 — story / tall portrait (1080×1920 style)
