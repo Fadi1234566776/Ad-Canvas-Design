@@ -97,6 +97,8 @@ import metaFeed31 from "@assets/meta-feed-31.png";
 import metaFeed32 from "@assets/meta-feed-32.png";
 import metaFeed33 from "@assets/meta-feed-33.png";
 import metaFeed34 from "@assets/meta-feed-34.png";
+import metaFeed35 from "@assets/meta-feed-35.png";
+import metaFeed36 from "@assets/meta-feed-36.png";
 
 export type AdFormat = "4:5" | "9:16" | "1:1";
 
@@ -111,6 +113,8 @@ export const feedAds: Project[] = [
    { id: "f23", imageUrl: metaFeed23, format: "4:5" },
 { id: "f24", imageUrl: metaFeed24, format: "4:5" },
 { id: "f25", imageUrl: metaFeed25, format: "4:5" },
+  { id: "f35", imageUrl: metaFeed35, format: "4:5" },
+{ id: "f36", imageUrl: metaFeed36, format: "4:5" },
 { id: "f26", imageUrl: metaFeed26, format: "4:5" },
 { id: "f27", imageUrl: metaFeed27, format: "4:5" },
 { id: "f28", imageUrl: metaFeed28, format: "4:5" },
