@@ -1,0 +1,20 @@
+[
+  {
+    "id": "feed",
+    "label": "Meta Feed Ads",
+    "aspectRatio": "4:5",
+    "order": 0
+  },
+  {
+    "id": "story",
+    "label": "Story Ads",
+    "aspectRatio": "9:16",
+    "order": 1
+  },
+  {
+    "id": "square",
+    "label": "Square Ads",
+    "aspectRatio": "1:1",
+    "order": 2
+  }
+]

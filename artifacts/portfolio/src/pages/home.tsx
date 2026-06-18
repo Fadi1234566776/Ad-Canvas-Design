@@ -1,24 +1,35 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
-import { feedAds, storyAds, squareAds, allProjects, type Project } from "../data/projects";
+import { projectsForCategory, sortCategories, type Project } from "../lib/creatives";
+import { useCreatives } from "../hooks/use-creatives";
+import { useCategories } from "../hooks/use-categories";
+import { categoryAspectRatio } from "../types/category";
+import { layoutForAspectRatio } from "../lib/aspect-ratio";
 import { Lightbox } from "../components/lightbox";
 
 interface SectionProps {
   label: string;
-  format: string;
+  aspectLabel: string;
   projects: Project[];
   gridClass: string;
-  aspectClass: string;
+  aspectRatioCss: string;
   onSelect: (p: Project) => void;
 }
 
-function AdSection({ label, format, projects, gridClass, aspectClass, onSelect }: SectionProps) {
+function AdSection({
+  label,
+  aspectLabel,
+  projects,
+  gridClass,
+  aspectRatioCss,
+  onSelect,
+}: SectionProps) {
   return (
     <div className="mb-12">
       <div className="flex items-center gap-3 mb-4 px-1">
         <span className="text-xs font-semibold uppercase tracking-widest text-primary">{label}</span>
-        <span className="text-xs text-muted-foreground/50 font-mono">{format}</span>
+        <span className="text-xs text-muted-foreground/50 font-mono">{aspectLabel}</span>
         <div className="flex-1 h-px bg-border/20" />
         <span className="text-xs text-muted-foreground/40">{projects.length} creatives</span>
       </div>
@@ -33,7 +44,10 @@ function AdSection({ label, format, projects, gridClass, aspectClass, onSelect }
             className="group relative cursor-pointer rounded-lg overflow-hidden bg-card"
             onClick={() => onSelect(project)}
           >
-            <div className={`relative ${aspectClass} overflow-hidden`}>
+            <div
+              className="relative w-full overflow-hidden"
+              style={{ aspectRatio: aspectRatioCss }}
+            >
               <img
                 src={project.imageUrl}
                 alt="Ad Creative"
@@ -51,9 +65,20 @@ function AdSection({ label, format, projects, gridClass, aspectClass, onSelect }
 
 export default function Home() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const { data: creatives, isLoading: loadingCreatives } = useCreatives();
+  const { data: categories, isLoading: loadingCategories } = useCategories();
+  const sortedCategories = sortCategories(categories ?? []);
 
   const handleSelect = (project: Project) => setSelectedProject(project);
   const handleClose = () => setSelectedProject(null);
+
+  if (loadingCreatives || loadingCategories) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <p className="text-muted-foreground text-sm">Loading portfolio…</p>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-background selection:bg-primary selection:text-primary-foreground">
@@ -100,37 +125,23 @@ export default function Home() {
 
       {/* Gallery */}
       <section className="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-
-        {/* 4:5 — Meta Feed Ads (3 columns) */}
-        <AdSection
-          label="Meta Feed Ads"
-          format="4:5"
-          projects={feedAds}
-          gridClass="grid-cols-2 sm:grid-cols-3"
-          aspectClass="aspect-[4/5]"
-          onSelect={handleSelect}
-        />
-
-        {/* 9:16 — Story Ads (narrower columns to preserve tall ratio) */}
-        <AdSection
-          label="Story Ads"
-          format="9:16"
-          projects={storyAds}
-          gridClass="grid-cols-3 sm:grid-cols-4 lg:grid-cols-6"
-          aspectClass="aspect-[9/16]"
-          onSelect={handleSelect}
-        />
-
-        {/* 1:1 — Square Ads */}
-        <AdSection
-          label="Square Ads"
-          format="1:1"
-          projects={squareAds}
-          gridClass="grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"
-          aspectClass="aspect-square"
-          onSelect={handleSelect}
-        />
-
+        {sortedCategories.map((category) => {
+          const ratio = categoryAspectRatio(category);
+          const layout = layoutForAspectRatio(ratio);
+          const projects = projectsForCategory(creatives ?? [], category.id);
+          if (projects.length === 0) return null;
+          return (
+            <AdSection
+              key={category.id}
+              label={category.label}
+              aspectLabel={layout.label}
+              projects={projects}
+              gridClass={layout.gridClass}
+              aspectRatioCss={layout.aspectRatioCss}
+              onSelect={handleSelect}
+            />
+          );
+        })}
       </section>
 
       {/* Footer */}

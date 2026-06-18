@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
-import type { Project } from "../data/projects";
+import type { Project } from "../lib/creatives";
 
 interface LightboxProps {
   project: Project | null;

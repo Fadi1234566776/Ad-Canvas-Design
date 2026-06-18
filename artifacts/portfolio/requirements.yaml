@@ -7,5 +7,5 @@ images:
     aspect_ratio: "16:9"
 
 notes:
-  - This is a static portfolio site, no backend needed.
-  - All data is mocked in the frontend components.
+  - Portfolio loads creatives from /api at runtime; run build before publishing.
+  - Admin dashboard at /admin requires ADMIN_PASSWORD to be set on the server.

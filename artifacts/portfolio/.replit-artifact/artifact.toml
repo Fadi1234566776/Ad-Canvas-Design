@@ -19,13 +19,15 @@ run = "pnpm --filter @workspace/portfolio run dev"
 
 [services.production]
 build = [ "pnpm", "--filter", "@workspace/portfolio", "run", "build" ]
-publicDir = "artifacts/portfolio/dist/public"
-serve = "static"
 
-[[services.production.rewrites]]
-from = "/*"
-to = "/index.html"
+[services.production.run]
+args = [ "node", "--experimental-strip-types", "artifacts/portfolio/server.ts" ]
+
+[services.production.run.env]
+PORT = "21113"
+NODE_ENV = "production"
 
 [services.env]
 PORT = "21113"
 BASE_PATH = "/"
+ADMIN_PASSWORD = "FadyImagesPortfolioWebsite@02^"
