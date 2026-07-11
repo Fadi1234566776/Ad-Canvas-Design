@@ -102,8 +102,8 @@ import metaFeed36 from "@assets/meta-feed-36.png";
 import metaFeed37 from "@assets/meta-feed-37.png";
 import metaFeed38 from "@assets/meta-feed-38.png";
 import metaFeed39 from "@assets/meta-feed-39.png";
-import metaFeed37 from "@assets/meta-feed-40.png";
-import metaFeed38 from "@assets/meta-feed-41.png";
+import metaFeed40 from "@assets/meta-feed-40.png";
+import metaFeed41 from "@assets/meta-feed-41.png";
 
 export type AdFormat = "4:5" | "9:16" | "1:1";
 
