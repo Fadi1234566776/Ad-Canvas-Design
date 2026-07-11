@@ -119,8 +119,6 @@ export const feedAds: Project[] = [
 { id: "f24", imageUrl: metaFeed24, format: "4:5" },
 { id: "f25", imageUrl: metaFeed25, format: "4:5" },
   { id: "f35", imageUrl: metaFeed35, format: "4:5" },
-  { id: "f37", imageUrl: metaFeed37, format: "4:5" },
-{ id: "f36", imageUrl: metaFeed36, format: "4:5" },
 { id: "f26", imageUrl: metaFeed26, format: "4:5" },
 { id: "f27", imageUrl: metaFeed27, format: "4:5" },
 { id: "f28", imageUrl: metaFeed28, format: "4:5" },
