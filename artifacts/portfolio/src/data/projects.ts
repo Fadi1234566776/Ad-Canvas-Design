@@ -104,6 +104,14 @@ import metaFeed38 from "@assets/meta-feed-38.png";
 import metaFeed39 from "@assets/meta-feed-39.png";
 import metaFeed40 from "@assets/meta-feed-40.png";
 import metaFeed41 from "@assets/meta-feed-41.png";
+import metaFeed44 from "@assets/meta-feed-44.png";
+import metaFeed45 from "@assets/meta-feed-45.jpg";
+import metaFeed46 from "@assets/meta-feed-46.png";
+import metaFeed47 from "@assets/meta-feed-47.png";
+import metaFeed48 from "@assets/meta-feed-48.png";
+import metaFeed49 from "@assets/meta-feed-49.png";
+import metaFeed50 from "@assets/meta-feed-50.png";
+import metaFeed51 from "@assets/meta-feed-51.png";
 
 export type AdFormat = "4:5" | "9:16" | "1:1";
 
@@ -115,6 +123,14 @@ export interface Project {
 
 // 4:5 — portrait feed ads (1080×1350 style)
 export const feedAds: Project[] = [
+  { id: "f51", imageUrl: metaFeed51, format: "4:5" },
+{ id: "f50", imageUrl: metaFeed50, format: "4:5" },
+{ id: "f49", imageUrl: metaFeed49, format: "4:5" },
+{ id: "f48", imageUrl: metaFeed48, format: "4:5" },
+{ id: "f47", imageUrl: metaFeed47, format: "4:5" },
+{ id: "f46", imageUrl: metaFeed46, format: "4:5" },
+{ id: "f45", imageUrl: metaFeed45, format: "4:5" },
+{ id: "f44", imageUrl: metaFeed44, format: "4:5" },
   { id: "f39", imageUrl: metaFeed40, format: "4:5" },
 { id: "f38", imageUrl: metaFeed41, format: "4:5" },
   { id: "f39", imageUrl: metaFeed39, format: "4:5" },
