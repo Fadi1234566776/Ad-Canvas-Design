@@ -112,6 +112,9 @@ import metaFeed48 from "@assets/meta-feed-48.png";
 import metaFeed49 from "@assets/meta-feed-49.png";
 import metaFeed50 from "@assets/meta-feed-50.png";
 import metaFeed51 from "@assets/meta-feed-51.png";
+import metaFeed52 from "@assets/meta-feed-52.png";
+import metaFeed53 from "@assets/meta-feed-53.png";
+import metaFeed54 from "@assets/meta-feed-54.png";
 
 export type AdFormat = "4:5" | "9:16" | "1:1";
 
@@ -126,6 +129,9 @@ export const feedAds: Project[] = [
   { id: "f51", imageUrl: metaFeed51, format: "4:5" },
 { id: "f50", imageUrl: metaFeed50, format: "4:5" },
 { id: "f49", imageUrl: metaFeed49, format: "4:5" },
+  { id: "f54", imageUrl: metaFeed54, format: "4:5" },
+{ id: "f53", imageUrl: metaFeed53, format: "4:5" },
+{ id: "f52", imageUrl: metaFeed52, format: "4:5" },
 { id: "f48", imageUrl: metaFeed48, format: "4:5" },
 { id: "f47", imageUrl: metaFeed47, format: "4:5" },
 { id: "f46", imageUrl: metaFeed46, format: "4:5" },
