@@ -115,6 +115,12 @@ import metaFeed51 from "@assets/meta-feed-51.png";
 import metaFeed52 from "@assets/meta-feed-52.png";
 import metaFeed53 from "@assets/meta-feed-53.png";
 import metaFeed54 from "@assets/meta-feed-54.png";
+import watchCareValueKit from "@assets/watch-care-value-kit-4x5.png";
+import watchCareThousands from "@assets/watch-care-thousands-4x5.png";
+import recognizeTalentRiskScore from "@assets/recognize-talent-risk-score-4x5.png";
+import recognizeExitReductionLight from "@assets/recognize-exit-reduction-light-4x5.png";
+import recognizeEnterpriseCaseStudy from "@assets/recognize-enterprise-case-study-4x5.png";
+import recognizeTalentAudit from "@assets/recognize-talent-audit-4x5.png";
 
 export type AdFormat = "4:5" | "9:16" | "1:1";
 
@@ -126,19 +132,23 @@ export interface Project {
 
 // 4:5 — portrait feed ads (1080×1350 style)
 export const feedAds: Project[] = [
+  { id: "f60", imageUrl: recognizeTalentAudit, format: "4:5" },
   { id: "f51", imageUrl: metaFeed51, format: "4:5" },
 { id: "f50", imageUrl: metaFeed50, format: "4:5" },
+{ id: "f55", imageUrl: watchCareValueKit, format: "4:5" },
 { id: "f49", imageUrl: metaFeed49, format: "4:5" },
   { id: "f54", imageUrl: metaFeed54, format: "4:5" },
 { id: "f53", imageUrl: metaFeed53, format: "4:5" },
 { id: "f52", imageUrl: metaFeed52, format: "4:5" },
 { id: "f48", imageUrl: metaFeed48, format: "4:5" },
 { id: "f47", imageUrl: metaFeed47, format: "4:5" },
+{ id: "f57", imageUrl: recognizeTalentRiskScore, format: "4:5" },
 { id: "f46", imageUrl: metaFeed46, format: "4:5" },
 { id: "f45", imageUrl: metaFeed45, format: "4:5" },
 { id: "f44", imageUrl: metaFeed44, format: "4:5" },
   { id: "f39", imageUrl: metaFeed40, format: "4:5" },
 { id: "f38", imageUrl: metaFeed41, format: "4:5" },
+  { id: "f56", imageUrl: watchCareThousands, format: "4:5" },
   { id: "f39", imageUrl: metaFeed39, format: "4:5" },
 { id: "f38", imageUrl: metaFeed38, format: "4:5" },
    { id: "f23", imageUrl: metaFeed23, format: "4:5" },
@@ -147,6 +157,7 @@ export const feedAds: Project[] = [
   { id: "f35", imageUrl: metaFeed35, format: "4:5" },
 { id: "f26", imageUrl: metaFeed26, format: "4:5" },
 { id: "f27", imageUrl: metaFeed27, format: "4:5" },
+{ id: "f58", imageUrl: recognizeExitReductionLight, format: "4:5" },
 { id: "f28", imageUrl: metaFeed28, format: "4:5" },
 { id: "f29", imageUrl: metaFeed29, format: "4:5" },
 { id: "f30", imageUrl: metaFeed30, format: "4:5" },
@@ -158,6 +169,7 @@ export const feedAds: Project[] = [
 { id: "f22", imageUrl: metaFeed22, format: "4:5" },
   { id: "f1", imageUrl: img01, format: "4:5" },
   { id: "f2", imageUrl: img02, format: "4:5" },
+  { id: "f59", imageUrl: recognizeEnterpriseCaseStudy, format: "4:5" },
   { id: "f3", imageUrl: img03, format: "4:5" },
   { id: "f4", imageUrl: img04, format: "4:5" },
   { id: "f5", imageUrl: img05, format: "4:5" },
