@@ -121,6 +121,12 @@ import recognizeTalentRiskScore from "@assets/recognize-talent-risk-score-4x5.we
 import recognizeExitReductionLight from "@assets/recognize-exit-reduction-light-4x5.webp";
 import recognizeEnterpriseCaseStudy from "@assets/recognize-enterprise-case-study-4x5.webp";
 import recognizeTalentAudit from "@assets/recognize-talent-audit-4x5.webp";
+import jugrfitStopBuyingIce from "@assets/jugrfit-stop-buying-ice-4x5.webp";
+import founderWholeWardrobe from "@assets/founder-whole-wardrobe-4x5.webp";
+import founderPimaWhiteTshirt from "@assets/founder-pima-white-tshirt-4x5.webp";
+import waterFunVeronaTemperature from "@assets/water-fun-verona-temperature-4x5.webp";
+import waterFunTropezDesign from "@assets/water-fun-tropez-design-durability-4x5.webp";
+import waterFunTropezFlow from "@assets/water-fun-tropez-flow-reliability-4x5.webp";
 
 export type AdFormat = "4:5" | "9:16" | "1:1";
 
@@ -132,6 +138,12 @@ export interface Project {
 
 // 4:5 — portrait feed ads (1080×1350 style)
 export const feedAds: Project[] = [
+  { id: "f61", imageUrl: jugrfitStopBuyingIce, format: "4:5" },
+  { id: "f62", imageUrl: founderWholeWardrobe, format: "4:5" },
+  { id: "f63", imageUrl: founderPimaWhiteTshirt, format: "4:5" },
+  { id: "f64", imageUrl: waterFunVeronaTemperature, format: "4:5" },
+  { id: "f65", imageUrl: waterFunTropezDesign, format: "4:5" },
+  { id: "f66", imageUrl: waterFunTropezFlow, format: "4:5" },
   { id: "f60", imageUrl: recognizeTalentAudit, format: "4:5" },
   { id: "f55", imageUrl: watchCareValueKit, format: "4:5" },
   { id: "f57", imageUrl: recognizeTalentRiskScore, format: "4:5" },
