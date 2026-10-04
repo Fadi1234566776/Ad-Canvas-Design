@@ -11,9 +11,10 @@ interface SectionProps {
   gridClass: string;
   aspectClass: string;
   onSelect: (p: Project) => void;
+  eagerCount?: number;
 }
 
-function AdSection({ label, format, projects, gridClass, aspectClass, onSelect }: SectionProps) {
+function AdSection({ label, format, projects, gridClass, aspectClass, onSelect, eagerCount = 0 }: SectionProps) {
   return (
     <div className="mb-12">
       <div className="flex items-center gap-3 mb-4 px-1">
@@ -38,7 +39,9 @@ function AdSection({ label, format, projects, gridClass, aspectClass, onSelect }
                 src={project.imageUrl}
                 alt="Ad Creative"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                loading="lazy"
+                loading={index < eagerCount ? "eager" : "lazy"}
+                fetchPriority={index < Math.min(eagerCount, 3) ? "high" : "auto"}
+                decoding="async"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
             </div>
@@ -108,6 +111,7 @@ export default function Home() {
           projects={feedAds}
           gridClass="grid-cols-2 sm:grid-cols-3"
           aspectClass="aspect-[4/5]"
+          eagerCount={6}
           onSelect={handleSelect}
         />
 

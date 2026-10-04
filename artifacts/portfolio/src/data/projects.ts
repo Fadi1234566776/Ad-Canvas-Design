@@ -115,12 +115,12 @@ import metaFeed51 from "@assets/meta-feed-51.png";
 import metaFeed52 from "@assets/meta-feed-52.png";
 import metaFeed53 from "@assets/meta-feed-53.png";
 import metaFeed54 from "@assets/meta-feed-54.png";
-import watchCareValueKit from "@assets/watch-care-value-kit-4x5.png";
-import watchCareThousands from "@assets/watch-care-thousands-4x5.png";
-import recognizeTalentRiskScore from "@assets/recognize-talent-risk-score-4x5.png";
-import recognizeExitReductionLight from "@assets/recognize-exit-reduction-light-4x5.png";
-import recognizeEnterpriseCaseStudy from "@assets/recognize-enterprise-case-study-4x5.png";
-import recognizeTalentAudit from "@assets/recognize-talent-audit-4x5.png";
+import watchCareValueKit from "@assets/watch-care-value-kit-4x5.webp";
+import watchCareThousands from "@assets/watch-care-thousands-4x5.webp";
+import recognizeTalentRiskScore from "@assets/recognize-talent-risk-score-4x5.webp";
+import recognizeExitReductionLight from "@assets/recognize-exit-reduction-light-4x5.webp";
+import recognizeEnterpriseCaseStudy from "@assets/recognize-enterprise-case-study-4x5.webp";
+import recognizeTalentAudit from "@assets/recognize-talent-audit-4x5.webp";
 
 export type AdFormat = "4:5" | "9:16" | "1:1";
 
