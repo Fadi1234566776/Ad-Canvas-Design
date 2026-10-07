@@ -127,6 +127,9 @@ import founderPimaWhiteTshirt from "@assets/founder-pima-white-tshirt-4x5.webp";
 import waterFunVeronaTemperature from "@assets/water-fun-verona-temperature-4x5.webp";
 import waterFunTropezDesign from "@assets/water-fun-tropez-design-durability-4x5.webp";
 import waterFunTropezFlow from "@assets/water-fun-tropez-flow-reliability-4x5.webp";
+import gooddayConnection from "@assets/goodday-puzzles-connection-4x5.webp";
+import gooddayGift from "@assets/goodday-puzzles-gift-4x5.webp";
+import gooddayTestimonial from "@assets/goodday-puzzles-testimonial-4x5.webp";
 
 export type AdFormat = "4:5" | "9:16" | "1:1";
 
@@ -140,12 +143,15 @@ export interface Project {
 export const feedAds: Project[] = [
   { id: "f61", imageUrl: jugrfitStopBuyingIce, format: "4:5" },
   { id: "f62", imageUrl: founderWholeWardrobe, format: "4:5" },
+  { id: "f67", imageUrl: gooddayConnection, format: "4:5" },
   { id: "f63", imageUrl: founderPimaWhiteTshirt, format: "4:5" },
   { id: "f64", imageUrl: waterFunVeronaTemperature, format: "4:5" },
   { id: "f65", imageUrl: waterFunTropezDesign, format: "4:5" },
+  { id: "f68", imageUrl: gooddayGift, format: "4:5" },
   { id: "f66", imageUrl: waterFunTropezFlow, format: "4:5" },
   { id: "f60", imageUrl: recognizeTalentAudit, format: "4:5" },
   { id: "f55", imageUrl: watchCareValueKit, format: "4:5" },
+  { id: "f69", imageUrl: gooddayTestimonial, format: "4:5" },
   { id: "f57", imageUrl: recognizeTalentRiskScore, format: "4:5" },
   { id: "f56", imageUrl: watchCareThousands, format: "4:5" },
   { id: "f58", imageUrl: recognizeExitReductionLight, format: "4:5" },
