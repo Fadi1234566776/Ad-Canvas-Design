@@ -101,7 +101,11 @@ export default function Home() {
       <section className="relative flex items-center justify-center overflow-hidden pt-12 pb-12 sm:pt-16 sm:pb-14">
         <div
           className="absolute inset-0 z-0 pointer-events-none"
-          style={{ background: "radial-gradient(circle at center, rgba(139, 92, 246, 0.12) 0%, transparent 55%)" }}
+          style={{
+            background: "radial-gradient(circle at center, hsl(var(--primary) / 0.12) 0%, transparent 55%)",
+            maskImage: "linear-gradient(to bottom, black 0%, black 45%, transparent 100%)",
+            WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 45%, transparent 100%)",
+          }}
         />
         <div className="relative z-10 mx-auto w-full max-w-4xl px-4 text-center sm:px-6">
           <motion.div
@@ -186,7 +190,14 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="w-full h-px bg-border/30" />
+      <div aria-hidden="true" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div
+          className="h-px w-full"
+          style={{
+            background: "linear-gradient(90deg, transparent 0%, hsl(var(--primary) / 0.3) 30%, hsl(var(--primary) / 0.3) 70%, transparent 100%)",
+          }}
+        />
+      </div>
 
       {/* Gallery */}
       <section className="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
