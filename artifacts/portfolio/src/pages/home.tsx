@@ -6,6 +6,15 @@ import { Lightbox } from "../components/lightbox";
 
 const UPWORK_PROFILE_URL = "https://www.upwork.com/freelancers/~01ff81f80387338c54";
 
+function AvailabilityDot() {
+  return (
+    <span
+      aria-hidden="true"
+      className="h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.65)] ring-4 ring-emerald-400/10 motion-safe:animate-pulse motion-safe:[animation-duration:1.8s]"
+    />
+  );
+}
+
 function HireBar() {
   return (
     <aside
@@ -18,8 +27,9 @@ function HireBar() {
           <p className="text-[13px] leading-snug font-medium text-foreground/90 sm:text-sm">
             Let’s design your next winning ad.
           </p>
-          <p className="mt-1 hidden text-xs text-muted-foreground sm:block">
-            Work with me directly on Upwork.
+          <p className="mt-1.5 inline-flex items-center gap-2 text-[10px] leading-snug text-emerald-300/90 sm:text-[11px]">
+            <AvailabilityDot />
+            Available for projects
           </p>
         </div>
         <a
@@ -115,7 +125,7 @@ export default function Home() {
             className="flex flex-col items-center"
           >
             <div className="mb-6 inline-flex items-center gap-2.5 rounded-full border border-primary/20 bg-primary/5 px-4 py-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-primary ring-4 ring-primary/10" />
+              <AvailabilityDot />
               <span className="text-[10px] font-medium tracking-[0.18em] text-foreground/60 uppercase sm:text-[11px]">
                 Available for projects
               </span>
